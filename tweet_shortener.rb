@@ -29,7 +29,7 @@ def word_substituter(tweet)
     end
     puts tweetarray
   end
-  puts tweetarray.join(" ")
+  #puts tweetarray.join(" ")
   tweetarray.join(" ")
 end
 
