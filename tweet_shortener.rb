@@ -27,12 +27,22 @@ def word_substituter(tweet)
       end
       counter+= 1
     end
-    puts tweetarray
   end
   #puts tweetarray.join(" ")
   tweetarray.join(" ")
 end
 
 def bulk_tweet_shortener(array)
-    puts word_substituter(array)
+  dictionaryorig = dictionary.keys
+  array.each_with_index do |word, index|
+    counter = 0
+    while counter < dictionaryorig.length
+      if dictionaryorig[counter] == word
+        array[index] = dictionary[dictionaryorig[counter]]
+      end
+      counter+= 1
+    end
+  end
+  #puts tweetarray.join(" ")
+  #tweetarray.join(" ")
 end 
