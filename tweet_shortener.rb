@@ -39,7 +39,7 @@ def bulk_tweet_shortener(array)
   end
 end 
 
-def selective_tweet_shortene(tweet)
+def selective_tweet_shortener(tweet)
   returntweet = tweet
   if tweet.size > 140
     returntweet = word_substituter(tweet)
